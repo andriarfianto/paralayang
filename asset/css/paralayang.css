@@ -216,6 +216,10 @@ body {
     font-weight: 600;
 }
 
+.order_btn a:hover {
+    text-decoration: none;
+}
+
 .order_btn button:hover {
     background-color: #3f72af;
     color: #dbe2ef;
