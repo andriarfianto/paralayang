@@ -1,0 +1,330 @@
+body {
+    font-family: 'Rubik';
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.nav-item {
+    padding: 12px 0;
+    position: relative;
+    font-weight: 200;
+    margin-right: 24px;
+}
+
+.nav-item.active a {
+    color: #252827 !important;
+    font-weight: 600;
+}
+
+.nav-item.active a:hover {
+    color: #F9B234 !important;
+    font-weight: 600;
+}
+
+.nav-link span {
+    color: #F9B234;
+    font-weight: 600;
+}
+
+.container h3 {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.9s;
+}
+
+.container .logo:hover {
+    transform: translateY(-6px);
+}
+
+.fixed-top {
+    background-color: rgba(248, 248, 248, 0.9);
+    transition: all 0.7s;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.15); */
+}
+
+.fixed-top.nav-item {
+    color: #ffffff;
+}
+
+/* Link Sosial Media */
+.social-links li a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.social-links .instagram a:hover {
+    color: #f09433;
+}
+
+.social-links .facebook a:hover {
+    color: #4267B2;
+}
+
+.social-links .youtube a:hover {
+    color: #FF0000;
+}
+
+.social-links .twitter a:hover {
+    color: #1DA1F2;
+}
+
+@media (max-width: 992px) {
+    .social-links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-links {
+        display: none;
+    }
+}
+
+/* Carousel */
+.slider {
+    height: 50vh;
+    min-height: 450px;
+    background: no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.85;
+    /* margin-top: -90px; */
+}
+
+.slider1 {
+    height: 50vh;
+    min-height: 450px;
+    background: no-repeat bottom bottom scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.85;
+}
+
+.slider2 {
+    height: 50vh;
+    min-height: 450px;
+    background: no-repeat top left scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.85;
+}
+
+.carousel h5 {
+    font-family: 'Montserrat';
+    color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel p {
+    font-weight: 300;
+}
+
+/* Transition Carousel */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Gallery */
+.gallery {
+    background-color: #f7fafd;
+    /* background: url('/asset/elements/feature-bg.png'); */
+    background-size: cover;
+    position: relative;
+}
+
+.figure img {
+    width: 362px;
+    height: 370px;
+    opacity: 0.9;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.9s;
+    border-radius: 3%;
+    border-radius: 5px;
+}
+
+.figure img:hover {
+    transform: translateY(-20px);
+}
+
+/* Ticket */
+.ticket {
+    background-color: #040e27;
+    opacity: 0.8;
+}
+
+/* Order Area */
+.order_area {
+    background-color: #3d495d;
+    padding: 67px 0;
+}
+
+.order_text h4 {
+    font-weight: 700;
+    color: #f2f2f2;
+}
+
+.order_text p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+.order_btn button {
+    background-color: #dbe2ef;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.order_btn button:hover {
+    background-color: #3f72af;
+    color: #dbe2ef;
+    transition: 0.7s;
+}
+
+/* About */
+.about-img,
+.testimonial-img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5%;
+}
+
+.about-img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.9s ease-in-out;
+}
+
+.about-img::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.about-icon {
+    /* float: left; */
+    /* background: #fff; */
+    /* width: 24px; */
+    height: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+.footer-social a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+}
+
+.footer-social .instagram:hover {
+    color: #f09433;
+}
+
+.footer-social .facebook:hover {
+    color: #4267B2;
+}
+
+.footer-social .youtube:hover {
+    color: #FF0000;
+}
+
+.footer-social .twitter:hover {
+    color: #1DA1F2;
+}
+
+#btnScrollup {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 1000;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    color: #555;
+    font-size: 26px;
+    text-decoration: none;
+    opacity: 0.9;
+    
+}
+
+#btnScrollup:hover {
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.7s;
+}
